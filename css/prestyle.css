@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/************loader */
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #loader p {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /***********************/
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #130020;
+}
+
+    .wrapper {
+    
+        display: flex;
+
+    }
+
+    /*.primerasPalabras{
+
+        //background: red;
+        font-size: 5.6rem;
+        font-weight: 500;
+        line-height: 1.2;
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    
+    .primerasPalabras h3{
+
+        font-size: 3.2rem;
+        font-weight: 500;
+        color: #fff;
+        
+
+    }
+    .primerasPalabras h1{
+
+        font-size: 4.2rem;
+        font-weight: 500;
+        color: #fff;
+
+    } */
+    .wrapper .first-text{
+    
+        font-size: 60px;
+        color: #fff;
+    }
+    
+    .sec-texts li {
+        
+        position: relative;
+        font-size: 60px;
+        top: 0;
+        color: #0ef;
+        list-style: none;
+        padding: 0 20px;
+        text-shadow: 0 0 10px #0ef;
+        
+        /*animation: slide 12s steps(4) infinite, colorful 6s infinite ;*/
+        animation: slide 12s steps(4) infinite, colorful 6s infinite;
+        
+    }
+
+    @keyframes slide{ 
+
+        100% {  
+
+            top: -360px
+        }
+    }
+    
+      @keyframes colorful {
+
+        100% {
+
+            filter: hue-rotate(360deg);
+        }
+    } 
+
+    /* @keyframes colorful-bg {
+        0% {
+          background-color: #130020;
+        }
+        50% {
+          background-color: #130020;
+        }
+        100% {
+          
+          background-color: #130020;
+          
+        }
+      } */
+
+    .wrapper .sec-texts{
+
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+    }
+
+    .sec-texts li span {
+    
+        position: relative;
+    }
+    
+    .sec-texts li span::before{
+    
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 400px;
+        height: 90px;
+        /*background-color: #130020;
+        border-left: 2px solid #0ef;
+        animation: typing 1.5s steps(20) infinite
+        alternate; */
+    
+    }
+    
+    /* @keyframes typing{
+    
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+     */
+ 
+    .btn {
+
+        display: inline-block;
+        padding: 1rem 2.8rem;
+        background: #0ef;
+        border-radius: 1rem;
+        box-shadow: 0 0 1rem #0ef;
+        font-size: 1.6rem;
+        color: #323946;
+        letter-spacing: .1rem;
+        font-weight: 600;
+        position: absolute;
+        bottom: 200px;
+        text-decoration-line: none;
+
+        border: 3px solid transparent;
+        transition: border 0.5s ease-out ;
+    
+        
+        animation: slidebtn 12s steps(4) infinite, colorfulbtn 6s infinite ;
+    
+    }
+
+    .btn:hover {
+        box-shadow: none;
+        border-color: #fff;
+        transition: border-color 0.5s ease-out;
+    }
+    
+    
+    @keyframes colorfulbtn {
+
+        100% {  
+
+            filter: hue-rotate(360deg);
+        }
+    }
+    
+    
